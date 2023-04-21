@@ -1,0 +1,23 @@
+
+.cardWinner{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 116px;
+    border-radius: 20px;
+    
+}
+.cardWinner img{
+    height: 100px;
+    border-radius: 20px;
+    /*DEixar cor dinamica entre verde branco e azul*/
+    border: 1px solid #ffffff9f;
+    box-shadow: 1px 1px 12px #fff;
+}
+.cardWinner p{
+    text-align: center;
+    font-weight: 700;
+    color: #999898;
+    padding-top: 7px;
+    font-family: 'Lucida Sans';
+}

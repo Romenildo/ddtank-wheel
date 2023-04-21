@@ -1,0 +1,10 @@
+.buttonWheel{
+    width: 250px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 4px black;
+    transition: all .2s ease-in-out;
+}
+
+.buttonWheel:hover{
+    transform: scale(1.1);
+}

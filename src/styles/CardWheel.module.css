@@ -1,0 +1,12 @@
+.cardWheel{
+
+    width: 175px;
+    border-radius: 20px;
+    border: 4px ridge #b4764f;
+    box-shadow: 3px 3px 4px black;
+    transition: all .2s ease-in-out;
+}
+
+.cardWheel:hover{
+    border: 6px solid yellow
+}
