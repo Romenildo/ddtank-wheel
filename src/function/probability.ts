@@ -10,7 +10,7 @@ const generateIds = (quant: number) => {
         awardsIds.push(generateItem() - 1)
     }
 
-    
+    console.log(awardsIds)
     return awardsIds
 }
 
@@ -21,10 +21,8 @@ const getRewards = (quant: number) => {
 
     do{
         ids = generateIds(quant)
-        console.log(ids)
         count10xfrag = ids.filter(x => x === 7).length;
         countPet = ids.filter(x => x === 2).length;
-        console.log(count10xfrag + " "+ countPet)
     }while(count10xfrag > 1 || countPet > 1)
     
     
@@ -52,7 +50,7 @@ const generateItem = () => {
     for (let i = 0; i < chances.length; i++) {
         accumulatedChance += chances[i] / sumChances;
         if (randomNumber <= accumulatedChance) {
-            chosenItem = i;
+            chosenItem = i + 1;
             break;
         }
     }
@@ -88,7 +86,7 @@ const generateItem = () => {
         case 14:
             return 2//'Moeda de ouro'
         default:
-            return 13
+            return 999
 
     }
 }
