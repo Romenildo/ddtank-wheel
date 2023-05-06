@@ -7,7 +7,6 @@ const generateIds = (quant:number) =>{
     for(let i = 0; i < quant;i++){
         awardsIds.push(generateItem()-1)
     }
-    console.log(awardsIds)
     return awardsIds
 }
 
@@ -24,7 +23,7 @@ const getRewards = (quant:number) =>{
 
 const generateItem = () =>{
     const randomNumber =Math.floor(Math.random() * 1000) + 1;
-    console.log(randomNumber)
+    //console.log(randomNumber)
     if(randomNumber >=1 && randomNumber <=2){//1%
         return 3//pet lendario
     }
