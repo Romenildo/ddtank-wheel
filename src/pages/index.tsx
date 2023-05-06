@@ -1,5 +1,5 @@
 
-
+import Head from 'next/head'
 import { useState } from 'react'
 import ButtonWheel from '../component/ButtonWheel'
 import CardWheel from '../component/CardWheel'
@@ -30,6 +30,9 @@ export default function Home() {
   
   return (
     <>
+    <Head>
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=0.1"/>
+    </Head>
     <div className="container">
       { showAwards && (
         <WinnerDisplay cardsWinner={awards} onClose={onClose}></WinnerDisplay>

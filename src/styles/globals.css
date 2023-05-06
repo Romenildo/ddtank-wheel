@@ -37,20 +37,17 @@ body {
   z-index: -1;
 }
 
-.wheel{
-  
-}
 
 
-
-@media screen and (max-width: 700px) and (orientation: portrait){
+/* Retrato */
+@media only screen and (max-width: 768px) and (max-aspect-ratio: 16/9) {
   .wheel{
     transform: scale(0.35);
   }
 }
 
-
-@media screen and (max-width: 700px) and (orientation: landscape) {
+/* Paisagem */
+@media only screen and (max-width: 768px) and (min-aspect-ratio: 16/9){
   .wheel{
     transform: scale(0.55);
   }
