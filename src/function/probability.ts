@@ -25,16 +25,16 @@ const getRewards = (quant:number) =>{
 const generateItem = () =>{
     const randomNumber =Math.floor(Math.random() * 1000) + 1;
     console.log(randomNumber)
-    if(randomNumber >=1 && randomNumber <=10){//1%
+    if(randomNumber >=1 && randomNumber <=2){//1%
         return 3//pet lendario
     }
-    if(randomNumber >=11 && randomNumber <=25){//1.5%
+    if(randomNumber >=3 && randomNumber <=6){//1.5%
         return 12//jewel nvl 5
     }
-    if(randomNumber >=26 && randomNumber <=46){//2%
+    if(randomNumber >=7 && randomNumber <=10){//2%
         return 8//frag pet lendario x10
     }
-    if(randomNumber >=47 && randomNumber <=82){//3.5%
+    if(randomNumber >=11 && randomNumber <=82){//3.5%
         return 11//chip
     }
     if(randomNumber >=83 && randomNumber <=118){//3.5%
