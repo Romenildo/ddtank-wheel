@@ -11,7 +11,6 @@ interface WinnerDisplayProp  {
 export default function WinnerDisplay(props:WinnerDisplayProp){
     
     function generateAllCards(){
-        console.log(props.cardsWinner)
         return props.cardsWinner.map((card, i)=>{
             return <CardWinner 
                         key={`${card.id}${i}`}

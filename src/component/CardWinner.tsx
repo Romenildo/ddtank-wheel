@@ -8,9 +8,26 @@ interface CardWinnerProp  {
 
 export default function CardWinner(props:CardWinnerProp){
 
+    let checkRarity;
+
+    switch (props.card.rarity) {
+      case 'hero':
+        checkRarity = styles.hero;
+        break;
+      case 'elite':
+        checkRarity = styles.elite;
+        break;
+      case 'excellent':
+        checkRarity = styles.excellent;
+        break;
+      default:
+        checkRarity = styles.common;
+        break;
+    }
+
     return(
-        <div className={styles.cardWinner}>
-            <img src={props.card.urlImageWin} alt="erro"/>
+        <div className={`${styles.cardWinner}`}>
+            <img src={props.card.urlImageWin} alt="erro" className={`${checkRarity}`}/>
             <p>{props.card.name}</p>
         </div>
     )

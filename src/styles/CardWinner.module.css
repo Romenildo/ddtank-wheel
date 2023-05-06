@@ -10,10 +10,31 @@
 .cardWinner img{
     height: 100px;
     border-radius: 20px;
-    /*DEixar cor dinamica entre verde branco e azul*/
+}
+
+.hero{
+    border: 1px solid #b91fb29f;
+    box-shadow: 1px 1px 12px #ad1fb9;
+}
+
+.elite{
+    border: 1px solid #3596f09f;
+    box-shadow: 1px 1px 12px #278afc;
+}
+
+.excellent{
+    border: 1px solid #2ad14e9f;
+    box-shadow: 1px 1px 12px #1fca44;
+}
+
+.common{
     border: 1px solid #ffffff9f;
     box-shadow: 1px 1px 12px #fff;
 }
+
+
+
+
 .cardWinner p{
     text-align: center;
     font-weight: 700;

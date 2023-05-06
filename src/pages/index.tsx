@@ -43,7 +43,7 @@ export default function Home() {
         <div style={{display:'flex', gap:'30px', margin:'30px 0px 0px 30px'}}>
           <CardWheel imageUrl='/assets/wheel/1dima.png'></CardWheel>
           <CardWheel imageUrl='/assets/wheel/2gold.png'></CardWheel>
-          <CardWheel imageUrl='/assets/wheel/3hamster.png'></CardWheel>
+          <CardWheel imageUrl='/assets/wheel/3baiacu.png'></CardWheel>
           <CardWheel imageUrl='/assets/wheel/4coal.png'></CardWheel>
           <CardWheel imageUrl='/assets/wheel/5expMont.png'></CardWheel>
         </div>
@@ -65,7 +65,7 @@ export default function Home() {
           <CardWheel imageUrl='/assets/wheel/11chip.png'></CardWheel>
           <CardWheel imageUrl='/assets/wheel/10magicCristal.png'></CardWheel>
           <CardWheel imageUrl='/assets/wheel/9forgeStone.png'></CardWheel>
-          <CardWheel imageUrl='/assets/wheel/8fragHamster.png'></CardWheel>
+          <CardWheel imageUrl='/assets/wheel/8fragBaiacu.png'></CardWheel>
         </div>
         
         <div className="buttons" style={{ position:'absolute', display:'flex', gap:'30px', marginTop:'100px'}}>
