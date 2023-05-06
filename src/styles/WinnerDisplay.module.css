@@ -11,11 +11,18 @@
 }
 
 .text_winner{
-    color: yellow;
+    background-image: linear-gradient(to right, #fff3a4, #fad710,#fff5b5,#fad70f,#fff5b5,#fad70f  );
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
     font-weight: 700;
     font-size: 5rem;
     text-align: center;
     min-width: 720px;
+    text-shadow: -5px -5px 30px #fdee1c;
+    box-shadow: inset 2px 2px 1000px #fdee1c38;
+    border-radius: 10px;
 }
 
 .awards_display{
