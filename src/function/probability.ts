@@ -9,11 +9,25 @@ const generateIds = (quant: number) => {
     for (let i = 0; i < quant; i++) {
         awardsIds.push(generateItem() - 1)
     }
+
+    
     return awardsIds
 }
 
 const getRewards = (quant: number) => {
-    const ids = generateIds(quant)
+    let ids 
+    let count10xfrag = 0
+    let countPet = 0
+
+    do{
+        ids = generateIds(quant)
+        console.log(ids)
+        count10xfrag = ids.filter(x => x === 7).length;
+        countPet = ids.filter(x => x === 2).length;
+        console.log(count10xfrag + " "+ countPet)
+    }while(count10xfrag > 1 || countPet > 1)
+    
+    
     const rewards: any = []
 
     ids.map((id) => {
@@ -29,19 +43,20 @@ const generateItem = () => {
 
     const sumChances = chances.reduce((a, b) => a + b, 0);
 
-    const numAleatorio = Math.random();
+    const randomNumber = Math.random();
+    
 
     
     let accumulatedChance = 0;
     let chosenItem;
     for (let i = 0; i < chances.length; i++) {
         accumulatedChance += chances[i] / sumChances;
-        if (numAleatorio <= accumulatedChance) {
+        if (randomNumber <= accumulatedChance) {
             chosenItem = i;
             break;
         }
     }
-    //console.log(chosenItem)
+    
 
     switch (chosenItem) {
         case 1:
@@ -73,7 +88,7 @@ const generateItem = () => {
         case 14:
             return 2//'Moeda de ouro'
         default:
-            return 7
+            return 13
 
     }
 }
