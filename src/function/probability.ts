@@ -25,7 +25,7 @@ const getRewards = (quant: number) => {
 
 const generateItem = () => {
 
-    const chances = [0.001, 0.0015, 0.002, 0.0035, 0.035, 0.05, 0.07, 0.14, 0.15, 0.05, 0.085, 0.13, 0.16, 0.05];
+    const chances = [0.001, 0.0015, 0.002, 0.035, 0.035, 0.05, 0.07, 0.14, 0.15, 0.05, 0.085, 0.13, 0.16, 0.05];
 
     const sumChances = chances.reduce((a, b) => a + b, 0);
 
@@ -45,13 +45,13 @@ const generateItem = () => {
 
     switch (chosenItem) {
         case 1:
-            return 3//pet lendario
+            return 3//pet lendario 0.1%
         case 2:
-            return 12//jewel nvl 5
+            return 12//jewel nvl 5 0.15%
         case 3:
-            return 8//frag pet lendario x10
+            return 8//frag pet lendario x10 0.2%
         case 4:
-            return 11//chip
+            return 11//chip 
         case 5:
             return 9//forja nvl 4
         case 6:
